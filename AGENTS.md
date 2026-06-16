@@ -21,6 +21,35 @@
    - 优先补充：最小/最大边界输入、重复值、负数、零值、空串、输出顺序不固定的判定说明。
 5. 把生成和补充后的文件路径返回给用户。
 
+## 生成题解（Makefile 快捷方式）
+
+除直接调用 Python 脚本外，也可使用 Makefile 快捷指令：
+
+```bash
+make gen <题号>             # 同时生成 Go 和 Python
+make gen <题号> go          # 只生成 Go
+make gen <题号> py          # 只生成 Python
+make gen <题号> FORCE=1     # 覆盖已有文件
+```
+
+- 底层调用 `skills/leetcode-generate-problem/scripts/run_generate_problem.py`，行为与直接调用脚本一致。
+- 文件已存在时默认拒绝覆盖，需用户明确传 `FORCE=1`。
+
+## 运行题解
+
+当用户想运行某道题的题解时，使用根目录的 `Makefile`：
+
+```bash
+make run <题号>           # 两种语言都运行，例如 make run 0121 或 make run 121
+make run <题号> go        # 只运行 Go
+make run <题号> py        # 只运行 Python
+```
+
+- 题号可以带或不带前导零，Makefile 会自动补全为 4 位。
+- 未指定语言时，若 Go 和 Python 文件都存在，两者依次运行；若只有一个存在，只运行那个。
+- 指定语言时，只运行对应语言的文件（即使另一种语言文件存在也忽略）。
+- 若目标文件不存在，Makefile 已打印错误，无需额外提示。
+
 ### 失败处理
 
 - 缺少题号：要求用户提供数字形式的 LeetCode 前端题号。
