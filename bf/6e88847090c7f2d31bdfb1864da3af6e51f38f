@@ -1,0 +1,31 @@
+solutions/go/0001_two_sum.go
+  s_a0b15d3728938c::t_6947e2f5b03294 42-51
+problems/0121_best_time_to_buy_and_sell_stock.json
+  s_a0b15d3728938c::t_6543c7e4a9bf34 1-42
+solutions/go/0121_best_time_to_buy_and_sell_stock.go
+  s_a0b15d3728938c::t_805fd85aea60c5 57-61
+  s_a0b15d3728938c::t_6543c7e4a9bf34 1-35,56
+  s_a0b15d3728938c::t_e11eb97039e6e1 36-55
+solutions/py/0121_best_time_to_buy_and_sell_stock.py
+  s_a0b15d3728938c::t_e4cfd1a55ca4ad 31-41
+  s_a0b15d3728938c::t_6543c7e4a9bf34 1-30,42-45
+scripts/generate_problem.py
+  s_a0b15d3728938c::t_6f06ff4adccaea 413-420
+  s_a0b15d3728938c::t_72d34911e0c29f 463-464,474-475
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "bf6e88847090c7f2d31bdfb1864da3af6e51f38f",
+  "prompts": {},
+  "sessions": {
+    "s_a0b15d3728938c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3bb6dea9-a6a0-491c-b61f-11ea87ea48be",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
