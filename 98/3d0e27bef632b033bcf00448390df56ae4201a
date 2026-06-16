@@ -1,0 +1,27 @@
+README.md
+  s_918038e04beb42::t_7d731f5d02bb14 43-44
+  s_918038e04beb42::t_4adf95a05caf06 9-10
+skills/leetcode-generate-problem/SKILL.md
+  s_918038e04beb42::t_2a8eea366791c6 52-53
+  s_918038e04beb42::t_13010dba0aaab7 37-38
+scripts/generate_problem.py
+  s_918038e04beb42::t_4677daae497e61 528,532
+AGENTS.md
+  s_918038e04beb42::t_63ce103ba2ef45 16-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "983d0e27bef632b033bcf00448390df56ae4201a",
+  "prompts": {},
+  "sessions": {
+    "s_918038e04beb42": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "17fdb502-df51-4b56-9522-b69716c00f86",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
