@@ -11,11 +11,24 @@ endif
 # FORCE=1 to overwrite existing files: make gen 121 FORCE=1
 FORCE ?= 0
 
-.PHONY: run gen
+.PHONY: help run gen
 
 # Absorb extra arguments so make doesn't treat them as targets
 %:
 	@:
+
+help:
+	@echo "Usage:"
+	@echo "  make gen <id> [go|py] [FORCE=1]  Generate problem template"
+	@echo "  make run <id> [go|py]             Run solution file(s)"
+	@echo ""
+	@echo "Examples:"
+	@echo "  make gen 121                      Generate Go + Python for problem 121"
+	@echo "  make gen 121 go                   Go only"
+	@echo "  make gen 121 py FORCE=1           Python only, overwrite existing"
+	@echo "  make run 121                      Run Go + Python for problem 121"
+	@echo "  make run 121 go                   Go only"
+	@echo "  make run 121 py                   Python only"
 
 run:
 	@if [ -z "$(RUN_ID)" ]; then \
