@@ -39,3 +39,13 @@ func selfTest() {
 		panic("example 3 failed")
 	}
 }
+
+func selfTestAdditional() {
+	// Add boundary cases and special-case assertions after reviewing
+	// the generated file together with problems/<id>_<slug>.json.
+}
+
+func main() {
+	selfTest()
+	selfTestAdditional()
+}

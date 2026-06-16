@@ -410,6 +410,14 @@ def render_go_additional_test_runner() -> str:
     )
 
 
+def render_go_main(executable: bool) -> str:
+    lines = ["func main() {"]
+    if executable:
+        lines.append("\tselfTest()")
+    lines.extend(["\tselfTestAdditional()", "}"])
+    return "\n".join(lines)
+
+
 def render_go_file(
     question: dict[str, Any],
     meta: dict[str, Any],
@@ -452,6 +460,8 @@ def render_go_file(
                 render_go_example_runner(meta, examples),
                 "",
                 render_go_additional_test_runner(),
+                "",
+                render_go_main(executable=True),
             ]
         )
     else:
@@ -461,6 +471,8 @@ def render_go_file(
                 "// into executable assertions.",
                 "",
                 render_go_additional_test_runner(),
+                "",
+                render_go_main(executable=False),
             ]
         )
     return "\n".join(sections).rstrip() + "\n"
