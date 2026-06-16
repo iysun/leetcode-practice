@@ -6,8 +6,8 @@
 
 目前支持两种语言：
 
-- `py/`: Python 单文件模板
-- `go/`: Go 单文件模板
+- `solutions/py/`: Python 单文件模板
+- `solutions/go/`: Go 单文件模板
 
 同时会在 `problems/` 下保存一份精简题面元数据，包含标题、链接、签名、示例和约束。
 
@@ -40,8 +40,8 @@ python scripts/generate_problem.py 1 --force
 
 生成结果示例：
 
-- `py/0001_two_sum.py`
-- `go/0001_two_sum.go`
+- `solutions/py/0001_two_sum.py`
+- `solutions/go/0001_two_sum.go`
 - `problems/0001_two_sum.json`
 
 ### 方式二：使用 skill

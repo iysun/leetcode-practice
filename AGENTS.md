@@ -13,8 +13,8 @@
    - 除非用户明确要求覆盖，否则不传 `--force`。
 3. 生成完成后，读取以下文件：
    - `problems/<id>_<slug>.json`
-   - `py/<id>_<slug>.py`（如果生成了）
-   - `go/<id>_<slug>.go`（如果生成了）
+   - `solutions/py/<id>_<slug>.py`（如果生成了）
+   - `solutions/go/<id>_<slug>.go`（如果生成了）
 4. 根据题目描述、约束和示例，在以下预留位置补充 2–5 个高价值测试：
    - Python：`_run_additional_tests()` 函数体内
    - Go：`selfTestAdditional()` 函数体内

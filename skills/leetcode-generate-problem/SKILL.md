@@ -34,8 +34,8 @@ python scripts/run_generate_problem.py 1 --force
 生成后继续读取：
 
 - `problems/<id>_<slug>.json`
-- `py/<id>_<slug>.py`
-- `go/<id>_<slug>.go`
+- `solutions/py/<id>_<slug>.py`
+- `solutions/go/<id>_<slug>.go`
 
 ## 失败处理
 
@@ -49,8 +49,8 @@ python scripts/run_generate_problem.py 1 --force
 
 成功时应生成：
 
-- 请求 Python 时生成 `py/<id>_<slug>.py`
-- 请求 Go 时生成 `go/<id>_<slug>.go`
+- 请求 Python 时生成 `solutions/py/<id>_<slug>.py`
+- 请求 Go 时生成 `solutions/go/<id>_<slug>.go`
 - 始终生成 `problems/<id>_<slug>.json`
 
 每个语言文件都是单文件结构，内部至少包含：

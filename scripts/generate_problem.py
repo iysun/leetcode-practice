@@ -525,11 +525,11 @@ def generate(problem_id: str, languages: set[str], force: bool) -> list[Path]:
     outputs.append((metadata_path, metadata_content))
 
     if "py" in languages:
-        python_path = REPO_ROOT / "py" / f"{stem}.py"
+        python_path = REPO_ROOT / "solutions" / "py" / f"{stem}.py"
         outputs.append((python_path, render_python_file(question, meta, examples, prefix)))
 
     if "go" in languages:
-        go_path = REPO_ROOT / "go" / f"{stem}.go"
+        go_path = REPO_ROOT / "solutions" / "go" / f"{stem}.go"
         outputs.append((go_path, render_go_file(question, meta, examples, prefix)))
 
     if not force:
