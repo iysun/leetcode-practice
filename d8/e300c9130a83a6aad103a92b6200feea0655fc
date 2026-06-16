@@ -1,0 +1,21 @@
+.cursorrules
+  s_e7e98ffb33fe96::t_ebf504ee017fc9 1-22
+.claude/settings.json
+  s_e7e98ffb33fe96::t_b986123ffbde90 1-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "d8e300c9130a83a6aad103a92b6200feea0655fc",
+  "prompts": {},
+  "sessions": {
+    "s_e7e98ffb33fe96": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f43d195b-ee1d-43dd-98f9-ec625c9f1cea",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
