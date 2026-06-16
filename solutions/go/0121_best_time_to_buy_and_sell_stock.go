@@ -12,7 +12,15 @@ import "reflect"
 
 // === Solution ===
 func maxProfit(prices []int) int {
-	panic("TODO: implement")
+	minPrice := prices[0]
+	maxProfit := 0
+
+	for _, price := range prices {
+		minPrice = min(minPrice, price)
+		maxProfit = max(maxProfit, price-minPrice)
+	}
+
+	return maxProfit
 }
 
 // === Test Code ===
