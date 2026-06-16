@@ -1,0 +1,6 @@
+---
+description: 项目基础规则
+alwaysApply: true
+---
+
+在处理这个仓库里的任何任务前，先读取项目根目录的 `AGENTS.md` 文件，获取完整的项目约定和工作流说明。
