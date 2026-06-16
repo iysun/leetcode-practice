@@ -1,0 +1,19 @@
+Makefile
+  s_67fbfcea947f63::t_d5ee0dafa69060 14,20-31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "3861b80f1d32afcfdb86e67091149cfe8a0cab60",
+  "prompts": {},
+  "sessions": {
+    "s_67fbfcea947f63": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ade150d6-2fb1-45d4-b5e3-e55c6c5c8cc4",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
