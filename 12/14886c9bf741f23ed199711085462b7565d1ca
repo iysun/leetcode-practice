@@ -1,0 +1,23 @@
+CLAUDE.md
+  s_e7e98ffb33fe96::t_42636069746fbb 1
+.cursor/rules/project.mdc
+  s_e7e98ffb33fe96::t_db243722fffb6a 1-6
+AGENTS.md
+  s_e7e98ffb33fe96::t_359bde75b1e13f 1-29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "1214886c9bf741f23ed199711085462b7565d1ca",
+  "prompts": {},
+  "sessions": {
+    "s_e7e98ffb33fe96": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f43d195b-ee1d-43dd-98f9-ec625c9f1cea",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
