@@ -1,0 +1,31 @@
+AGENTS.md
+  s_67fbfcea947f63::t_f9fe436f1b08a6 43-45,49-51
+  s_67fbfcea947f63::t_778fc8d58f6656 24-37
+  s_67fbfcea947f63::t_f75029387b5857 38-42,46-48,52
+Makefile
+  s_67fbfcea947f63::t_bd334f22f7ca82 33
+  s_67fbfcea947f63::t_51d675b03943e4 1,4-5,15,17-21,26-27,34-39,41-43,45-47
+  s_67fbfcea947f63::t_d0a69ab9cc532e 2-3,16,22-25,28-32,40,44
+  s_67fbfcea947f63::t_4012c076fe0db5 6-14
+  s_67fbfcea947f63::t_dcc8b32f05ff5b 48-66
+README.md
+  s_67fbfcea947f63::t_9e4a5549a8f34c 115-126
+  s_67fbfcea947f63::t_1bfb157d6c9518 132-135,138-139
+  s_67fbfcea947f63::t_c37ba039d0c8c3 127-131,136-137,140-141
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "d69c058beb4e9dbb0c3e55696febfb499609c8be",
+  "prompts": {},
+  "sessions": {
+    "s_67fbfcea947f63": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ade150d6-2fb1-45d4-b5e3-e55c6c5c8cc4",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
