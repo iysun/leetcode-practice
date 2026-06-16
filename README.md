@@ -13,6 +13,13 @@
 
 ## 使用
 
+这个项目支持两种使用方式：
+
+1. 直接运行脚本
+2. 通过仓库内的 skill 让 agent 生成并复查题目
+
+### 方式一：直接运行脚本
+
 生成一道题：
 
 ```bash
@@ -36,6 +43,47 @@ python scripts/generate_problem.py 1 --force
 - `py/0001_two_sum.py`
 - `go/0001_two_sum.go`
 - `problems/0001_two_sum.json`
+
+### 方式二：使用 skill
+
+仓库内已经包含一个本地 skill：
+
+- `skills/leetcode-generate-problem`
+
+这个 skill 对应的职责不是只生成题目，而是完整执行两段式流程：
+
+1. 根据题号生成题目文件
+2. 读取生成结果并补充更有价值的测试用例
+
+#### skill 入口
+
+- 说明文件：`skills/leetcode-generate-problem/SKILL.md`
+- 包装脚本：`skills/leetcode-generate-problem/scripts/run_generate_problem.py`
+
+#### skill 命令示例
+
+```bash
+python skills/leetcode-generate-problem/scripts/run_generate_problem.py 1
+python skills/leetcode-generate-problem/scripts/run_generate_problem.py 1 --lang py
+python skills/leetcode-generate-problem/scripts/run_generate_problem.py 1 --force
+```
+
+#### agent 使用方式
+
+如果你是在支持本地 skill 的 agent 环境里使用这个仓库，可以直接显式调用：
+
+```text
+使用 $leetcode-generate-problem 生成第 1 题
+使用 $leetcode-generate-problem 生成第 206 题，只要 Python
+使用 $leetcode-generate-problem 重新生成第 1 题并覆盖已有文件
+```
+
+这个 skill 的默认要求是：
+
+- 默认同时生成 `py` 和 `go`
+- 默认不覆盖已有文件
+- 生成后继续读取 `problems/*.json` 和代码文件
+- 在预留的追加测试区域里补边界测试和特殊场景测试
 
 ## 文件结构
 
