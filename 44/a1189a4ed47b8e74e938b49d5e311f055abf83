@@ -1,0 +1,19 @@
+README.md
+  s_6eac8f9c6f9b71::t_9dfbde71cfe49a 16-22,47-86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "44a1189a4ed47b8e74e938b49d5e311f055abf83",
+  "prompts": {},
+  "sessions": {
+    "s_6eac8f9c6f9b71": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ece65-2416-7f53-b0df-108d09c336f8",
+        "model": "gpt-5.5"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
