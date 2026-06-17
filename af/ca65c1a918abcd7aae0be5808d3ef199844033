@@ -1,0 +1,19 @@
+solutions/go/0045_jump_game_ii.go
+  s_f17743e66b27d4::t_6274d2b2afd24d 18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "afca65c1a918abcd7aae0be5808d3ef199844033",
+  "prompts": {},
+  "sessions": {
+    "s_f17743e66b27d4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_12ca6df79ffeOYPsfOE4f6V7KY",
+        "model": "unknown"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
