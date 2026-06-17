@@ -1,0 +1,44 @@
+{
+  "id": "45",
+  "title": "Jump Game II",
+  "translated_title": "跳跃游戏 II",
+  "title_slug": "jump-game-ii",
+  "url": "https://leetcode.cn/problems/jump-game-ii/",
+  "difficulty": "Medium",
+  "statement_text": "You are given a 0-indexed array of integers nums of length n. You are initially positioned at index 0.\n\n\nEach element nums[i] represents the maximum length of a forward jump from index i. In other words, if you are at index i, you can jump to any index (i + j) where:\n\n\n\n\t0 <= j <= nums[i] and\n\ti + j < n\n\n\nReturn the minimum number of jumps to reach index n - 1. The test cases are generated such that you can reach index n - 1.\n\n\n \n\nExample 1:\n\n\n\nInput: nums = [2,3,1,1,4]\nOutput: 2\nExplanation: The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index.\n\n\nExample 2:\n\n\n\nInput: nums = [2,3,0,1,4]\nOutput: 2\n\n\n \n\nConstraints:\n\n\n\n\t1 <= nums.length <= 10^4\n\t0 <= nums[i] <= 1000\n\tIt's guaranteed that you can reach nums[n - 1].",
+  "translated_statement_text": "给定一个长度为 n 的 0 索引整数数组 nums。初始位置在下标 0。\n\n\n每个元素 nums[i] 表示从索引 i 向后跳转的最大长度。换句话说，如果你在索引 i 处，你可以跳转到任意 (i + j) 处：\n\n\n\n\t0 <= j <= nums[i] 且\n\ti + j < n\n\n\n返回到达 n - 1 的最小跳跃次数。测试用例保证可以到达 n - 1。\n\n\n \n\n\n示例 1:\n\n\n\n输入: nums = [2,3,1,1,4]\n输出: 2\n解释: 跳到最后一个位置的最小跳跃数是 2。\n     从下标为 0 跳到下标为 1 的位置，跳 1 步，然后跳 3 步到达数组的最后一个位置。\n\n\n示例 2:\n\n\n\n输入: nums = [2,3,0,1,4]\n输出: 2\n\n\n \n\n\n提示:\n\n\n\n\t1 <= nums.length <= 10^4\n\t0 <= nums[i] <= 1000\n\t题目保证可以到达 n - 1",
+  "tags": [
+    "Greedy",
+    "Array",
+    "Dynamic Programming"
+  ],
+  "signature": {
+    "name": "jump",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "sample_test_case": "[2,3,1,1,4]",
+  "examples": [
+    {
+      "input": "[2,3,1,1,4]",
+      "output": "2"
+    },
+    {
+      "input": "[2,3,0,1,4]",
+      "output": "2"
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^4",
+    "0 <= nums[i] <= 1000",
+    "It's guaranteed that you can reach nums[n - 1]."
+  ],
+  "hints": []
+}
