@@ -13,7 +13,16 @@ import "reflect"
 
 // === Solution ===
 func jump(nums []int) int {
-	panic("TODO: implement")
+	current_end, farthest, jumps := 0, 0, 0
+
+	for i := range nums[:len(nums)-1] {
+		farthest = max(farthest, i+nums[i])
+		if i == current_end {
+			jumps += 1
+			current_end = farthest
+		}
+	}
+	return jumps
 }
 
 // === Test Code ===
