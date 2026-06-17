@@ -12,7 +12,15 @@ import "reflect"
 
 // === Solution ===
 func canJump(nums []int) bool {
-	panic("TODO: implement")
+	max_reach := 0
+
+	for i, v := range nums {
+		if i > max_reach {
+			return false
+		}
+		max_reach = max(max_reach, i+v)
+	}
+	return true
 }
 
 // === Test Code ===

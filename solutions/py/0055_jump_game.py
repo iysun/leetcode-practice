@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 from typing import List
 
 # Problem: 0055 Jump Game
@@ -9,10 +10,19 @@ from typing import List
 # - 1 <= nums.length <= 10^4
 # - 0 <= nums[i] <= 10^5
 
+
 # === Solution ===
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
-        raise NotImplementedError
+        max_reach = 0
+
+        for i,v in enumerate(nums):
+            if i > max_reach:
+                return False
+            max_reach = max(max_reach, i+v)
+
+        return True
+
 
 # === Test Code ===
 # Example 1
@@ -22,10 +32,12 @@ class Solution:
 # Input: [3,2,1,0,4]
 # Output: false
 
+
 def _run_examples() -> None:
     solver = Solution()
     assert solver.canJump([2, 3, 1, 1, 4]) == True, "example 1 failed"
     assert solver.canJump([3, 2, 1, 0, 4]) == False, "example 2 failed"
+
 
 def _run_additional_tests() -> None:
     solver = Solution()
@@ -39,6 +51,7 @@ def _run_additional_tests() -> None:
     assert solver.canJump([10, 0, 0, 0, 0]) == True, "large initial jump failed"
     # 5. Need intermediate jumps to bypass zero
     assert solver.canJump([1, 2, 0, 1]) == True, "intermediate jumps failed"
+
 
 if __name__ == "__main__":
     _run_examples()
