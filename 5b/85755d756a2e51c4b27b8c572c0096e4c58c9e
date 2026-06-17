@@ -1,0 +1,25 @@
+solutions/py/0045_jump_game_ii.py
+  s_7f205bccba7b9e::t_0ec7936613990e 1-31,47-50
+  s_7f205bccba7b9e::t_0004bca1d6f950 32-46
+problems/0045_jump_game_ii.json
+  s_7f205bccba7b9e::t_0ec7936613990e 1-44
+solutions/go/0045_jump_game_ii.go
+  s_7f205bccba7b9e::t_472d40bff2217b 37-64
+  s_7f205bccba7b9e::t_0ec7936613990e 1-36,65-70
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "5b85755d756a2e51c4b27b8c572c0096e4c58c9e",
+  "prompts": {},
+  "sessions": {
+    "s_7f205bccba7b9e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_12ccd33caffeMt4EAsY5bXzAoc",
+        "model": "unknown"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
