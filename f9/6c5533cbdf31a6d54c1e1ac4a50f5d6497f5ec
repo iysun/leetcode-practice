@@ -1,0 +1,27 @@
+solutions/go/0763_partition_labels.go
+  s_e64aff8f8d0bcc::t_33ac68c2f3e644 13-28
+  s_e64aff8f8d0bcc::t_ba2e91aa04d637 43-127
+  s_e64aff8f8d0bcc::t_59c58718350a56 1-12,29-42,128-132
+problems/0763_partition_labels.json
+  s_e64aff8f8d0bcc::t_59c58718350a56 1-46
+solutions/py/0763_partition_labels.py
+  s_e64aff8f8d0bcc::t_f252e2a1b5cdd8 15-23
+  s_e64aff8f8d0bcc::t_62237d10da348f 37-62
+  s_e64aff8f8d0bcc::t_59c58718350a56 1-14,24-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "f96c5533cbdf31a6d54c1e1ac4a50f5d6497f5ec",
+  "prompts": {},
+  "sessions": {
+    "s_e64aff8f8d0bcc": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_127c9157cffeyarmdmaXe9gWGS",
+        "model": "unknown"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
