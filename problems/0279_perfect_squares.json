@@ -1,0 +1,42 @@
+{
+  "id": "279",
+  "title": "Perfect Squares",
+  "translated_title": "完全平方数",
+  "title_slug": "perfect-squares",
+  "url": "https://leetcode.cn/problems/perfect-squares/",
+  "difficulty": "Medium",
+  "statement_text": "Given an integer n, return the least number of perfect square numbers that sum to n.\n\n\nA perfect square is an integer that is the square of an integer; in other words, it is the product of some integer with itself. For example, 1, 4, 9, and 16 are perfect squares while 3 and 11 are not.\n\n\n \n\nExample 1:\n\n\n\nInput: n = 12\nOutput: 3\nExplanation: 12 = 4 + 4 + 4.\n\n\nExample 2:\n\n\n\nInput: n = 13\nOutput: 2\nExplanation: 13 = 4 + 9.\n\n\n \n\nConstraints:\n\n\n\n\t1 <= n <= 10^4",
+  "translated_statement_text": "给你一个整数 n ，返回 和为 n 的完全平方数的最少数量 。\n\n\n完全平方数 是一个整数，其值等于另一个整数的平方；换句话说，其值等于一个整数自乘的积。例如，1、4、9 和 16 都是完全平方数，而 3 和 11 不是。\n\n\n \n\n\n示例 1：\n\n\n\n输入：n = 12\n输出：3 \n解释：12 = 4 + 4 + 4\n\n示例 2：\n\n\n\n输入：n = 13\n输出：2\n解释：13 = 4 + 9\n \n\n提示：\n\n\n\n\t1 <= n <= 10^4",
+  "tags": [
+    "Breadth-First Search",
+    "Math",
+    "Dynamic Programming"
+  ],
+  "signature": {
+    "name": "numSquares",
+    "params": [
+      {
+        "name": "n",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "sample_test_case": "12",
+  "examples": [
+    {
+      "input": "12",
+      "output": "3"
+    },
+    {
+      "input": "13",
+      "output": "2"
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 10^4"
+  ],
+  "hints": []
+}
