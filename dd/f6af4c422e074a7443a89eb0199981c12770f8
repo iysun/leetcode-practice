@@ -1,0 +1,25 @@
+problems/0279_perfect_squares.json
+  s_f445b33e553992::t_d3bcabfe9be537 1-42
+solutions/go/0279_perfect_squares.go
+  s_f445b33e553992::t_d3bcabfe9be537 1-8,12-16,28-47,70-72
+  s_f445b33e553992::t_aad2cd310b3f60 48-67,69
+solutions/py/0279_perfect_squares.py
+  s_f445b33e553992::t_71aa31d875ba7a 36-45,47
+  s_f445b33e553992::t_d3bcabfe9be537 1-35,48-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "ddf6af4c422e074a7443a89eb0199981c12770f8",
+  "prompts": {},
+  "sessions": {
+    "s_f445b33e553992": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0ef0d62afffeTZNOu7IoJg0Lqp",
+        "model": "unknown"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
