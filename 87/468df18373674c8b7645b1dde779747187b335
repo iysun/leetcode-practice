@@ -1,0 +1,29 @@
+problems/0139_word_break.json
+  s_dc69e6773039f1::t_f025f10bce1cc7 1-57
+solutions/go/0139_word_break.go
+  s_dc69e6773039f1::t_a023e2d4571753 62-78,80-81
+  s_dc69e6773039f1::t_6b857be54de553 85
+  s_dc69e6773039f1::t_94135aff5d4b97 46-59
+  s_dc69e6773039f1::t_f025f10bce1cc7 1-17,30-44,61,82-84,86-87
+solutions/py/0139_word_break.py
+  s_dc69e6773039f1::t_f025f10bce1cc7 1-39,47
+  s_dc69e6773039f1::t_469e5f221d0557 41-45
+  s_dc69e6773039f1::t_20fc3141be45db 59-61
+  s_dc69e6773039f1::t_67f4143feca095 48-56
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "87468df18373674c8b7645b1dde779747187b335",
+  "prompts": {},
+  "sessions": {
+    "s_dc69e6773039f1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0ea020deaffe8f6u2mL9c3ThCs",
+        "model": "unknown"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
