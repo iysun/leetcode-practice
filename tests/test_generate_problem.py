@@ -118,6 +118,10 @@ class GenerateProblemTests(unittest.TestCase):
         self.assertIn("# === Test Code ===", rendered)
         self.assertIn("assert solver.twoSum", rendered)
         self.assertIn("def _run_additional_tests() -> None:", rendered)
+        # The additional-test placeholder must keep instructing the AI to only
+        # add assertions and leave the Solution stub unimplemented.
+        self.assertIn("keep the Solution stub unimplemented", rendered)
+        self.assertIn("do not solve the problem", rendered)
 
     def test_render_go_file_contains_solution_and_test_sections(self) -> None:
         examples = extract_examples(QUESTION)
@@ -126,6 +130,10 @@ class GenerateProblemTests(unittest.TestCase):
         self.assertIn("// === Test Code ===", rendered)
         self.assertIn("reflect.DeepEqual", rendered)
         self.assertIn("func selfTestAdditional()", rendered)
+        # The additional-test placeholder must keep instructing the AI to only
+        # add assertions and leave the Solution stub unimplemented.
+        self.assertIn("keep the Solution stub unimplemented", rendered)
+        self.assertIn("do not solve the problem", rendered)
 
     def test_parse_meta_rejects_missing_payload(self) -> None:
         with self.assertRaises(GenerationError):

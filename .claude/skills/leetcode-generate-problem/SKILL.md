@@ -1,6 +1,9 @@
 ---
 name: leetcode-generate-problem
 description: 根据 LeetCode 前端题号调用当前仓库的生成器，生成本地题目文件。用于用户想把某道 LeetCode 题同步到这个仓库、生成 Python 或 Go 的单文件模板、补齐题目元数据，或重新生成已经存在的题目文件时。
+allowed-tools:
+  - Bash(python .claude/skills/leetcode-generate-problem/scripts/run_generate_problem.py:*)
+  - Bash(make gen:*)
 ---
 
 # LeetCode 题目生成
