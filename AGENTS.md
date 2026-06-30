@@ -7,7 +7,7 @@
 1. 从用户请求里提取数字题号。
 2. 在项目根目录运行包装脚本：
    ```bash
-   python skills/leetcode-generate-problem/scripts/run_generate_problem.py <题号>
+   python .claude/skills/leetcode-generate-problem/scripts/run_generate_problem.py <题号>
    ```
    - 只有用户明确指定语言时才传 `--lang py` 或 `--lang go`，否则同时生成两种语言。
    - 除非用户明确要求覆盖，否则不传 `--force`。
@@ -33,7 +33,7 @@ make gen <题号> py          # 只生成 Python
 make gen <题号> FORCE=1     # 覆盖已有文件
 ```
 
-- 底层调用 `skills/leetcode-generate-problem/scripts/run_generate_problem.py`，行为与直接调用脚本一致。
+- 底层调用 `.claude/skills/leetcode-generate-problem/scripts/run_generate_problem.py`，行为与直接调用脚本一致。
 - 文件已存在时默认拒绝覆盖，需用户明确传 `FORCE=1`。
 
 ## 运行题解

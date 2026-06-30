@@ -11,7 +11,7 @@ description: 根据 LeetCode 前端题号调用当前仓库的生成器，生成
 
 1. 确认用户是在当前仓库里生成 LeetCode 题目。
 2. 从用户请求里提取前端题号。
-3. 在当前 skill 目录下运行 `scripts/run_generate_problem.py`。
+3. 在仓库根目录运行 `.claude/skills/leetcode-generate-problem/scripts/run_generate_problem.py`。
 4. 只有用户明确限制语言时才传 `--lang py` 或 `--lang go`，否则默认同时生成两种语言。
 5. 除非用户明确要求覆盖已有文件，否则不要传 `--force`。
 6. 生成完成后，立即读取生成出的语言文件和 `problems/<id>_<slug>.json`。
@@ -21,12 +21,12 @@ description: 根据 LeetCode 前端题号调用当前仓库的生成器，生成
 
 ## 命令
 
-从当前 skill 目录运行包装脚本：
+从仓库根目录运行包装脚本：
 
 ```bash
-python scripts/run_generate_problem.py 1
-python scripts/run_generate_problem.py 1 --lang py
-python scripts/run_generate_problem.py 1 --force
+python .claude/skills/leetcode-generate-problem/scripts/run_generate_problem.py 1
+python .claude/skills/leetcode-generate-problem/scripts/run_generate_problem.py 1 --lang py
+python .claude/skills/leetcode-generate-problem/scripts/run_generate_problem.py 1 --force
 ```
 
 这个包装脚本会转调仓库根目录下的 `scripts/generate_problem.py`。

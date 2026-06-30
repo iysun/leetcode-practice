@@ -73,7 +73,7 @@ gen:
 		echo "Error: unsupported language '$$lang', use 'go' or 'py'"; \
 		exit 1; \
 	fi; \
-	cmd="python skills/leetcode-generate-problem/scripts/run_generate_problem.py $(GEN_ID)"; \
+	cmd="python .claude/skills/leetcode-generate-problem/scripts/run_generate_problem.py $(GEN_ID)"; \
 	[ -n "$$lang" ] && cmd="$$cmd --lang $$lang"; \
 	[ "$(FORCE)" = "1" ] && cmd="$$cmd --force"; \
 	$$cmd

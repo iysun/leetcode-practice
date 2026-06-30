@@ -48,7 +48,7 @@ python scripts/generate_problem.py 1 --force
 
 仓库内已经包含一个本地 skill：
 
-- `skills/leetcode-generate-problem`
+- `.claude/skills/leetcode-generate-problem`
 
 这个 skill 对应的职责不是只生成题目，而是完整执行两段式流程：
 
@@ -57,15 +57,15 @@ python scripts/generate_problem.py 1 --force
 
 #### skill 入口
 
-- 说明文件：`skills/leetcode-generate-problem/SKILL.md`
-- 包装脚本：`skills/leetcode-generate-problem/scripts/run_generate_problem.py`
+- 说明文件：`.claude/skills/leetcode-generate-problem/SKILL.md`
+- 包装脚本：`.claude/skills/leetcode-generate-problem/scripts/run_generate_problem.py`
 
 #### skill 命令示例
 
 ```bash
-python skills/leetcode-generate-problem/scripts/run_generate_problem.py 1
-python skills/leetcode-generate-problem/scripts/run_generate_problem.py 1 --lang py
-python skills/leetcode-generate-problem/scripts/run_generate_problem.py 1 --force
+python .claude/skills/leetcode-generate-problem/scripts/run_generate_problem.py 1
+python .claude/skills/leetcode-generate-problem/scripts/run_generate_problem.py 1 --lang py
+python .claude/skills/leetcode-generate-problem/scripts/run_generate_problem.py 1 --force
 ```
 
 #### agent 使用方式
@@ -73,9 +73,9 @@ python skills/leetcode-generate-problem/scripts/run_generate_problem.py 1 --forc
 如果你是在支持本地 skill 的 agent 环境里使用这个仓库，可以直接显式调用：
 
 ```text
-使用 $leetcode-generate-problem 生成第 1 题
-使用 $leetcode-generate-problem 生成第 206 题，只要 Python
-使用 $leetcode-generate-problem 重新生成第 1 题并覆盖已有文件
+/leetcode-generate-problem 生成第 1 题
+/leetcode-generate-problem 生成第 206 题，只要 Python
+/leetcode-generate-problem 重新生成第 1 题并覆盖已有文件
 ```
 
 这个 skill 的默认要求是：

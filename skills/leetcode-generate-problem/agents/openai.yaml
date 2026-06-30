@@ -1,4 +1,0 @@
-interface:
-  display_name: "LeetCode 题目生成"
-  short_description: "按题号生成仓库内题目文件"
-  default_prompt: "使用 $leetcode-generate-problem 根据题号生成当前仓库里的 LeetCode 题目文件。"
