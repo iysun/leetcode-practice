@@ -1,0 +1,27 @@
+problems/0300_longest_increasing_subsequence.json
+  s_8d6aedd391667a::t_30a4cd63cef0cf 1-47
+solutions/py/0300_longest_increasing_subsequence.py
+  s_8d6aedd391667a::t_942dfa5e6c5857 42-51
+  s_8d6aedd391667a::t_30a4cd63cef0cf 1-13,24-41,53-55
+solutions/go/0300_longest_increasing_subsequence.go
+  s_8d6aedd391667a::t_17b31795e6be95 18-19,29-35
+  s_8d6aedd391667a::t_30a4cd63cef0cf 1-9,15-16,36-61,82-87
+  s_8d6aedd391667a::t_bf5ca9c07fdc03 11,13
+  s_8d6aedd391667a::t_abb9021794e23e 62-81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "b8fd27732d0dbb1dbd7f6a3ac4ede40cae65625f",
+  "prompts": {},
+  "sessions": {
+    "s_8d6aedd391667a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0e8eb2e9fffepSNw0X7RQ1IQg4",
+        "model": "unknown"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
