@@ -19,11 +19,11 @@ class Solution:
         dp = [False] * (n+1)
         dp[0] = True
         for i in range(0, n+1):
-            for j in range(0, i):
-                word = s[j:i]
-                if word in wordDict and dp[j]:
-                    dp[i] = True
-        return dp[n]
+            if not dp[i]: continue
+            for word in wordDict:
+                if i + len(word) <= n and s[i:i+len(word)] == word:
+                    dp[i+len(word)] = True
+        return dp[-1]
 
 
 

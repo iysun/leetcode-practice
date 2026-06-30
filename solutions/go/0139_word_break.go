@@ -1,7 +1,5 @@
 package main
 
-import "slices"
-
 // Problem: 0139 Word Break
 // URL: https://leetcode.cn/problems/word-break/
 // Difficulty: Medium
@@ -22,10 +20,12 @@ func wordBreak(s string, wordDict []string) bool {
 	}
 	dp[0] = true
 	for i := 0; i < n+1; i++ {
-		for j := 0; j < i; j++ {
-			word := s[j:i]
-			if slices.Contains(wordDict, word) && dp[j] {
-				dp[i] = true
+		if !dp[i] {
+			continue
+		}
+		for _, word := range wordDict {
+			if i+len(word) <= n && s[i:i+len(word)] == word {
+				dp[i+len(word)] = true
 			}
 		}
 	}
