@@ -294,8 +294,10 @@ def render_python_additional_test_runner() -> str:
     return "\n".join(
         [
             "def _run_additional_tests() -> None:",
-            "    # Add boundary cases and special-case assertions after reviewing",
-            "    # the generated file together with problems/<id>_<slug>.json.",
+            "    # AI: add 2-5 high-value boundary/edge assertions here after reviewing",
+            "    # the problem and problems/<id>_<slug>.json. You may derive expected",
+            "    # values from the statement, but keep the Solution stub unimplemented",
+            "    # — only add assertions, do not solve the problem.",
             "    pass",
         ]
     )
@@ -403,8 +405,10 @@ def render_go_additional_test_runner() -> str:
     return "\n".join(
         [
             "func selfTestAdditional() {",
-            "\t// Add boundary cases and special-case assertions after reviewing",
-            "\t// the generated file together with problems/<id>_<slug>.json.",
+            "\t// AI: add 2-5 high-value boundary/edge assertions here after reviewing",
+            "\t// the problem and problems/<id>_<slug>.json. You may derive expected",
+            "\t// values from the statement, but keep the Solution stub unimplemented",
+            "\t// — only add assertions, do not solve the problem.",
             "}",
         ]
     )

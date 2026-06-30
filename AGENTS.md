@@ -15,12 +15,24 @@
    - `problems/<id>_<slug>.json`
    - `solutions/py/<id>_<slug>.py`（如果生成了）
    - `solutions/go/<id>_<slug>.go`（如果生成了）
-4. 根据题目描述、约束和示例，在以下预留位置补充 2–5 个高价值测试：
-   - Python：`_run_additional_tests()` 函数体内
-   - Go：`selfTestAdditional()` 函数体内
-   - 优先补充：最小/最大边界输入、重复值、负数、零值、空串、输出顺序不固定的判定说明。
-   - **禁止** 直接生成非测试的代码实现
-5. 把生成和补充后的文件路径返回给用户。
+4. **补充测试用例（必做）**：脚本只产出空的测试占位，生成后必须由你补全，不是可选步骤。
+   - 只编辑 `_run_additional_tests()`（Python）/ `selfTestAdditional()`（Go）函数体，新增 2–5 条可执行断言。
+   - 每条断言写一行注释说明它针对的边界或陷阱；优先覆盖：最小/最大边界输入、重复值、负数、零值、空串、输出顺序不固定的判定。质量优先，不机械堆数量。
+   - 断言里的**期望值**由你根据题意和约束推导后直接写入——这是允许且必要的，但**这不等于实现解法**。
+   - **不要改动解法主体与样例区**：`Solution`（`raise NotImplementedError`）/ Go 解题函数（`panic("TODO: implement")`）以及样例区（`_run_examples`/`selfTest`）保持原样。
+   - **禁止实现题目解法**。这是练习仓库，解法主体由用户自己写，你只补测试断言。
+   - 链表/树/图等复杂结构题：若生成器没给可执行样例，就在追加测试区写构造器骨架或手工测试 TODO，保留样例区，不要硬凑断言。
+   - **不要运行测试**：解法还是桩，跑测试必然失败，这是预期；不要为了让它通过而去实现解法。
+
+   参考风格（Python，仿 `solutions/py/0139_word_break.py`）：
+   ```python
+   def _run_additional_tests() -> None:
+       # 单字符且在字典中
+       assert Solution().wordBreak("a", ["a"]) is True
+       # 需要重复使用同一个词
+       assert Solution().wordBreak("aaaa", ["a"]) is True
+   ```
+5. 把生成和补充后的文件路径返回给用户，并说明解法主体仍是待实现的桩。
 
 ## 生成题解（Makefile 快捷方式）
 
