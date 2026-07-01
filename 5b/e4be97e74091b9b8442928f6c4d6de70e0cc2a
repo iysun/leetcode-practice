@@ -1,0 +1,25 @@
+solutions/go/0152_maximum_product_subarray.go
+  s_70da8f9da3b608::t_bbd3af7db615ea 45-60
+  s_70da8f9da3b608::t_fcb7aca90d2c8b 1-15,25-44,61-66
+solutions/py/0152_maximum_product_subarray.py
+  s_70da8f9da3b608::t_fcb7aca90d2c8b 1-40,50-52
+  s_70da8f9da3b608::t_d59c67467a334c 41-48
+problems/0152_maximum_product_subarray.json
+  s_70da8f9da3b608::t_fcb7aca90d2c8b 1-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "5be4be97e74091b9b8442928f6c4d6de70e0cc2a",
+  "prompts": {},
+  "sessions": {
+    "s_70da8f9da3b608": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0e3b1e5a3ffeEO1TTZpNWLsEg2",
+        "model": "unknown"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
