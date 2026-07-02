@@ -1,0 +1,25 @@
+problems/0416_partition_equal_subset_sum.json
+  s_70da8f9da3b608::t_5419524ad619f7 1-42
+solutions/py/0416_partition_equal_subset_sum.py
+  s_70da8f9da3b608::t_5ffd0e97795e08 41-50
+  s_70da8f9da3b608::t_5419524ad619f7 1-40,52-54
+solutions/go/0416_partition_equal_subset_sum.go
+  s_70da8f9da3b608::t_5419524ad619f7 1-14,33-52,73-78
+  s_70da8f9da3b608::t_43584f2045f8ee 53-72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "864b545ffc0c8628abe35de22445128598c8cb7e",
+  "prompts": {},
+  "sessions": {
+    "s_70da8f9da3b608": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0e3b1e5a3ffeEO1TTZpNWLsEg2",
+        "model": "unknown"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
