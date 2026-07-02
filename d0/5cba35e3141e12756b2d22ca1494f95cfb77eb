@@ -1,0 +1,25 @@
+solutions/go/0032_longest_valid_parentheses.go
+  s_d4ad127be473ba::t_aeeab0411bd4b9 1-9,12-15,105-128,153-156
+  s_d4ad127be473ba::t_af7edff226efcd 130-144,150-151
+problems/0032_longest_valid_parentheses.json
+  s_d4ad127be473ba::t_aeeab0411bd4b9 1-47
+solutions/py/0032_longest_valid_parentheses.py
+  s_d4ad127be473ba::t_af7edff226efcd 111-112,114,116,118
+  s_d4ad127be473ba::t_aeeab0411bd4b9 1-17,92-105,124-126
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "d05cba35e3141e12756b2d22ca1494f95cfb77eb",
+  "prompts": {},
+  "sessions": {
+    "s_d4ad127be473ba": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f2160-c7ff-7d01-ba61-dc355b528f46",
+        "model": "gpt-5.4"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
