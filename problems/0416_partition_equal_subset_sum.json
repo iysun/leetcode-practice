@@ -1,0 +1,42 @@
+{
+  "id": "416",
+  "title": "Partition Equal Subset Sum",
+  "translated_title": "分割等和子集",
+  "title_slug": "partition-equal-subset-sum",
+  "url": "https://leetcode.cn/problems/partition-equal-subset-sum/",
+  "difficulty": "Medium",
+  "statement_text": "Given an integer array nums, return true if you can partition the array into two subsets such that the sum of the elements in both subsets is equal or false otherwise.\n\n\n \n\nExample 1:\n\n\n\nInput: nums = [1,5,11,5]\nOutput: true\nExplanation: The array can be partitioned as [1, 5, 5] and [11].\n\n\nExample 2:\n\n\n\nInput: nums = [1,2,3,5]\nOutput: false\nExplanation: The array cannot be partitioned into equal sum subsets.\n\n\n \n\nConstraints:\n\n\n\n\t1 <= nums.length <= 200\n\t1 <= nums[i] <= 100",
+  "translated_statement_text": "给你一个 只包含正整数 的 非空 数组 nums 。请你判断是否可以将这个数组分割成两个子集，使得两个子集的元素和相等。\n\n\n \n\n\n示例 1：\n\n\n\n输入：nums = [1,5,11,5]\n输出：true\n解释：数组可以分割成 [1, 5, 5] 和 [11] 。\n\n示例 2：\n\n\n\n输入：nums = [1,2,3,5]\n输出：false\n解释：数组不能分割成两个元素和相等的子集。\n\n\n \n\n\n提示：\n\n\n\n\t1 <= nums.length <= 200\n\t1 <= nums[i] <= 100",
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "signature": {
+    "name": "canPartition",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "sample_test_case": "[1,5,11,5]",
+  "examples": [
+    {
+      "input": "[1,5,11,5]",
+      "output": "true"
+    },
+    {
+      "input": "[1,2,3,5]",
+      "output": "false"
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 200",
+    "1 <= nums[i] <= 100"
+  ],
+  "hints": []
+}
