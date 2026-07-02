@@ -1,0 +1,47 @@
+{
+  "id": "32",
+  "title": "Longest Valid Parentheses",
+  "translated_title": "最长有效括号",
+  "title_slug": "longest-valid-parentheses",
+  "url": "https://leetcode.cn/problems/longest-valid-parentheses/",
+  "difficulty": "Hard",
+  "statement_text": "Given a string containing just the characters '(' and ')', return the length of the longest valid (well-formed) parentheses substring.\n\n\n \n\nExample 1:\n\n\n\nInput: s = \"(()\"\nOutput: 2\nExplanation: The longest valid parentheses substring is \"()\".\n\n\nExample 2:\n\n\n\nInput: s = \")()())\"\nOutput: 4\nExplanation: The longest valid parentheses substring is \"()()\".\n\n\nExample 3:\n\n\n\nInput: s = \"\"\nOutput: 0\n\n\n \n\nConstraints:\n\n\n\n\t0 <= s.length <= 3 * 10^4\n\ts[i] is '(', or ')'.",
+  "translated_statement_text": "给你一个只包含 '(' 和 ')' 的字符串，找出最长有效（格式正确且连续）括号 子串 的长度。\n\n\n左右括号匹配，即每个左括号都有对应的右括号将其闭合的字符串是格式正确的，比如 \"(()())\"。\n\n\n \n\n\n\n\n示例 1：\n\n\n\n输入：s = \"(()\"\n输出：2\n解释：最长有效括号子串是 \"()\"\n\n\n示例 2：\n\n\n\n输入：s = \")()())\"\n输出：4\n解释：最长有效括号子串是 \"()()\"\n\n\n示例 3：\n\n\n\n输入：s = \"\"\n输出：0\n\n\n \n\n\n提示：\n\n\n\n\t0 <= s.length <= 3 * 10^4\n\ts[i] 为 '(' 或 ')'",
+  "tags": [
+    "Stack",
+    "String",
+    "Dynamic Programming"
+  ],
+  "signature": {
+    "name": "longestValidParentheses",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "sample_test_case": "\"(()\"",
+  "examples": [
+    {
+      "input": "\"(()\"",
+      "output": "2"
+    },
+    {
+      "input": "\")()())\"",
+      "output": "4"
+    },
+    {
+      "input": "\"\"",
+      "output": "0"
+    }
+  ],
+  "constraints": [
+    "0 <= s.length <= 3 * 10^4",
+    "s[i] is '(', or ')'."
+  ],
+  "hints": []
+}
