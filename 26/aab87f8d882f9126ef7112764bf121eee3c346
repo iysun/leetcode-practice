@@ -1,0 +1,25 @@
+solutions/go/0062_unique_paths.go
+  s_38e3894c8f7a3e::t_3e21b771105092 1-13,24-43,64-69
+  s_38e3894c8f7a3e::t_686e0cecae0249 44-63
+solutions/py/0062_unique_paths.py
+  s_38e3894c8f7a3e::t_3e21b771105092 1-36,49-51
+  s_38e3894c8f7a3e::t_d1978d1e022903 37-46
+problems/0062_unique_paths.json
+  s_38e3894c8f7a3e::t_3e21b771105092 1-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "26aab87f8d882f9126ef7112764bf121eee3c346",
+  "prompts": {},
+  "sessions": {
+    "s_38e3894c8f7a3e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0c5eded0cffe1bY9JCoJ5cj5oA",
+        "model": "unknown"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
