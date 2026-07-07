@@ -1,0 +1,25 @@
+problems/0064_minimum_path_sum.json
+  s_38e3894c8f7a3e::t_96048ce9bfbd3e 1-45
+solutions/go/0064_minimum_path_sum.go
+  s_38e3894c8f7a3e::t_0ab9223cbe2972 50-69
+  s_38e3894c8f7a3e::t_96048ce9bfbd3e 1-16,30-49,70-75
+solutions/py/0064_minimum_path_sum.py
+  s_38e3894c8f7a3e::t_9c18bb7283fef0 41-50
+  s_38e3894c8f7a3e::t_96048ce9bfbd3e 1-40,52-54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "c3c5ef53e58b71fff2b56f3e3026e2ab6022200a",
+  "prompts": {},
+  "sessions": {
+    "s_38e3894c8f7a3e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0c5eded0cffe1bY9JCoJ5cj5oA",
+        "model": "unknown"
+      },
+      "human_author": "mingzhou <mingzhou@tsign.cn>"
+    }
+  }
+}
