@@ -1,0 +1,46 @@
+{
+  "id": "72",
+  "title": "Edit Distance",
+  "translated_title": "编辑距离",
+  "title_slug": "edit-distance",
+  "url": "https://leetcode.cn/problems/edit-distance/",
+  "difficulty": "Medium",
+  "statement_text": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\n\nYou have the following three operations permitted on a word:\n\n\n\n\tInsert a character\n\tDelete a character\n\tReplace a character\n\n\n \n\nExample 1:\n\n\n\nInput: word1 = \"horse\", word2 = \"ros\"\nOutput: 3\nExplanation: \nhorse -> rorse (replace 'h' with 'r')\nrorse -> rose (remove 'r')\nrose -> ros (remove 'e')\n\n\nExample 2:\n\n\n\nInput: word1 = \"intention\", word2 = \"execution\"\nOutput: 5\nExplanation: \nintention -> inention (remove 't')\ninention -> enention (replace 'i' with 'e')\nenention -> exention (replace 'n' with 'x')\nexention -> exection (replace 'n' with 'c')\nexection -> execution (insert 'u')\n\n\n \n\nConstraints:\n\n\n\n\t0 <= word1.length, word2.length <= 500\n\tword1 and word2 consist of lowercase English letters.",
+  "translated_statement_text": "给你两个单词 word1 和 word2， 请返回将 word1 转换成 word2 所使用的最少操作数  。\n\n\n你可以对一个单词进行如下三种操作：\n\n\n\n\t插入一个字符\n\t删除一个字符\n\t替换一个字符\n\n\n \n\n\n示例 1：\n\n\n\n输入：word1 = \"horse\", word2 = \"ros\"\n输出：3\n解释：\nhorse -> rorse (将 'h' 替换为 'r')\nrorse -> rose (删除 'r')\nrose -> ros (删除 'e')\n\n\n示例 2：\n\n\n\n输入：word1 = \"intention\", word2 = \"execution\"\n输出：5\n解释：\nintention -> inention (删除 't')\ninention -> enention (将 'i' 替换为 'e')\nenention -> exention (将 'n' 替换为 'x')\nexention -> exection (将 'n' 替换为 'c')\nexection -> execution (插入 'u')\n\n\n \n\n\n提示：\n\n\n\n\t0 <= word1.length, word2.length <= 500\n\tword1 和 word2 由小写英文字母组成",
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "signature": {
+    "name": "minDistance",
+    "params": [
+      {
+        "name": "word1",
+        "type": "string"
+      },
+      {
+        "name": "word2",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "sample_test_case": "\"horse\"\n\"ros\"",
+  "examples": [
+    {
+      "input": "\"horse\"\n\"ros\"",
+      "output": "3"
+    },
+    {
+      "input": "\"intention\"\n\"execution\"",
+      "output": "5"
+    }
+  ],
+  "constraints": [
+    "0 <= word1.length, word2.length <= 500",
+    "word1 and word2 consist of lowercase English letters."
+  ],
+  "hints": []
+}
