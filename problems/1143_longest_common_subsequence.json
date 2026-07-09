@@ -1,0 +1,53 @@
+{
+  "id": "1143",
+  "title": "Longest Common Subsequence",
+  "translated_title": "最长公共子序列",
+  "title_slug": "longest-common-subsequence",
+  "url": "https://leetcode.cn/problems/longest-common-subsequence/",
+  "difficulty": "Medium",
+  "statement_text": "Given two strings text1 and text2, return the length of their longest common subsequence. If there is no common subsequence, return 0.\n\n\nA subsequence of a string is a new string generated from the original string with some characters (can be none) deleted without changing the relative order of the remaining characters.\n\n\n\n\tFor example, \"ace\" is a subsequence of \"abcde\".\n\n\nA common subsequence of two strings is a subsequence that is common to both strings.\n\n\n \n\nExample 1:\n\n\n\nInput: text1 = \"abcde\", text2 = \"ace\" \nOutput: 3  \nExplanation: The longest common subsequence is \"ace\" and its length is 3.\n\n\nExample 2:\n\n\n\nInput: text1 = \"abc\", text2 = \"abc\"\nOutput: 3\nExplanation: The longest common subsequence is \"abc\" and its length is 3.\n\n\nExample 3:\n\n\n\nInput: text1 = \"abc\", text2 = \"def\"\nOutput: 0\nExplanation: There is no such common subsequence, so the result is 0.\n\n\n \n\nConstraints:\n\n\n\n\t1 <= text1.length, text2.length <= 1000\n\ttext1 and text2 consist of only lowercase English characters.",
+  "translated_statement_text": "给定两个字符串 text1 和 text2，返回这两个字符串的最长 公共子序列 的长度。如果不存在 公共子序列 ，返回 0 。\n\n\n一个字符串的 子序列 是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符（也可以不删除任何字符）后组成的新字符串。\n\n\n\n\t例如，\"ace\" 是 \"abcde\" 的子序列，但 \"aec\" 不是 \"abcde\" 的子序列。\n\n\n两个字符串的 公共子序列 是这两个字符串所共同拥有的子序列。\n\n\n \n\n\n示例 1：\n\n\n\n输入：text1 = \"abcde\", text2 = \"ace\" \n输出：3  \n解释：最长公共子序列是 \"ace\" ，它的长度为 3 。\n\n\n示例 2：\n\n\n\n输入：text1 = \"abc\", text2 = \"abc\"\n输出：3\n解释：最长公共子序列是 \"abc\" ，它的长度为 3 。\n\n\n示例 3：\n\n\n\n输入：text1 = \"abc\", text2 = \"def\"\n输出：0\n解释：两个字符串没有公共子序列，返回 0 。\n\n\n \n\n\n提示：\n\n\n\n\t1 <= text1.length, text2.length <= 1000\n\ttext1 和 text2 仅由小写英文字符组成。",
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "signature": {
+    "name": "longestCommonSubsequence",
+    "params": [
+      {
+        "name": "text1",
+        "type": "string"
+      },
+      {
+        "type": "string",
+        "name": "text2"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "sample_test_case": "\"abcde\"\n\"ace\"",
+  "examples": [
+    {
+      "input": "\"abcde\"\n\"ace\"",
+      "output": "3"
+    },
+    {
+      "input": "\"abc\"\n\"abc\"",
+      "output": "3"
+    },
+    {
+      "input": "\"abc\"\n\"def\"",
+      "output": "0"
+    }
+  ],
+  "constraints": [
+    "1 <= text1.length, text2.length <= 1000",
+    "text1 and text2 consist of only lowercase English characters."
+  ],
+  "hints": [
+    "Try dynamic programming. \r\nDP[i][j] represents the longest common subsequence of text1[0 ... i] & text2[0 ... j].",
+    "DP[i][j] = DP[i - 1][j - 1] + 1 , if text1[i] == text2[j]\r\nDP[i][j] = max(DP[i - 1][j], DP[i][j - 1]) , otherwise"
+  ]
+}
